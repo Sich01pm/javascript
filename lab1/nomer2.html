@@ -7,14 +7,17 @@
     "use strict";
     let lastDigit;
     let num= prompt('Сколько птиц на ветке?');
+    if(((num%100)>10) && ((num%100)<15)){
+  console.log('На ветке сидит '+num+' ворон');   
+    } else{
   lastDigit=num%10;
 if(lastDigit==1){
-  alert('На ветке сидит '+num+' ворона');}
+  console.log('На ветке сидит '+num+' ворона');}
   else if(lastDigit==2 || lastDigit==3 ||lastDigit==4){
-    alert('На ветке сидит '+num+' вороны');
-  } else{ alert('На ветке сидит '+num+' ворон');}
-
-console.log(lastDigit);
+    console.log('На ветке сидит '+num+' вороны');
+  } else{ console.log('На ветке сидит '+num+' ворон');}
+    
+    }
     switch(lastDigit){
       case 1:
         console.log('На ветке сидит '+num+' ворона');break;

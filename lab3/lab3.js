@@ -14,3 +14,10 @@ function ucFirst(str) {
 }
 let str = prompt("Введи строку");
 alert(ucFirst(str));
+
+function checkSpam(str) {
+    str = str.toLowerCase();
+    if ((str.includes('xxx')) || (str.includes('viagra')))
+        return true;
+    else return false;
+}

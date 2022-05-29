@@ -27,3 +27,12 @@ function truncate(str, maxlength) {
         str = str.slice(0, maxlength - 1) + '\u{2026}';
     return str;
 }
+
+function camelize(str) {
+    let id;
+    while (str.includes("-")) {
+        id = str.indexOf('-');
+        str = str.slice(0, id) + str[id + 1].toUpperCase() + str.substring(id + 2);
+    }
+    return str;
+}

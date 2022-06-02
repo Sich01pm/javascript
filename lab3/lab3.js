@@ -63,9 +63,12 @@ arr_reserve=arr.sort((a, b) => b - a);
 alert(arr_reserve);
 }
 
- function sum(...arr) {
-            let s = 0;
-            for (let i of arr)
-                s += +i;
-            return s;
-        }
+function sum() {
+    let result = 0;
+  
+    for (let i = 0; i < arguments.length; i++) {
+      result += arguments[i];
+    }
+  
+    return result;
+  }

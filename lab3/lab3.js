@@ -55,25 +55,17 @@ function camelize(str) {
             return n2;
         }
 
-let arr = [];
-        let i = 0;
-        let a;
-        let arrReverseSorted = [];
-        while (!Number.isNaN(a)) {
-            a = +prompt("Введите эл-т массива. Символ/строка для завершения");
-            if (!Number.isNaN(a))
-                arr[i] = +a;
-            ++i;
-        }
-        arrReverseSorted = arr;
-        arrReverseSorted.sort((a, b) => b-a);
-        console.log(arr);
-        console.log(arrReverseSorted);
+function arrReverseSorted(arr){
+arr_reserve=[];
 
+arr_reserve=arr.sort((a, b) => b - a);
+
+alert(arr_reserve);
+}
 
  function sum(...arr) {
             let s = 0;
             for (let i of arr)
                 s += +i;
             return s;
-        }    
+        }

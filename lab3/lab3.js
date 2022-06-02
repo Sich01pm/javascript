@@ -36,3 +36,44 @@ function camelize(str) {
     }
     return str;
 }
+       function fib(n) {
+            let count = 0;
+            let n1 = 1,
+                n2 = 1,
+                c = 0;
+            if (n == 0)
+                n2 = 0;
+            else
+            if (n >= 1)
+                if (n >= 2) {
+                    for (let i = 2; i < n; i++) {
+                        c = n2;
+                        n2 = n1 + n2;
+                        n1 = c;
+                    }
+                }
+            return n2;
+        }
+
+let arr = [];
+        let i = 0;
+        let a;
+        let arrReverseSorted = [];
+        while (!Number.isNaN(a)) {
+            a = +prompt("Введите эл-т массива. Символ/строка для завершения");
+            if (!Number.isNaN(a))
+                arr[i] = +a;
+            ++i;
+        }
+        arrReverseSorted = arr;
+        arrReverseSorted.sort((a, b) => b-a);
+        console.log(arr);
+        console.log(arrReverseSorted);
+
+
+ function sum(...arr) {
+            let s = 0;
+            for (let i of arr)
+                s += +i;
+            return s;
+        }    

@@ -12,8 +12,6 @@ function getDecimal(num) {
 function ucFirst(str) {
     return (str[0].toUpperCase() + str.slice(1));
 }
-let str = prompt("Введи строку");
-alert(ucFirst(str));
 
 function checkSpam(str) {
     str = str.toLowerCase();
@@ -32,31 +30,13 @@ function camelize(str) {
     let id;
     while (str.includes("-")) {
         id = str.indexOf('-');
-        str = str.slice(0, id) + str[id + 1].toUpperCase() + str.substring(id + 2);
+        str = str.slice(0, id) + str[id + 1].toUpperCase() + str.slice(id + 2);
     }
     return str;
 }
-       function fib(n) {
-            let count = 0;
-            let n1 = 1,
-                n2 = 1,
-                c = 0;
-            if (n == 0)
-                n2 = 0;
-            else
-            if (n >= 1)
-                if (n >= 2) {
-                    for (let i = 2; i < n; i++) {
-                        c = n2;
-                        n2 = n1 + n2;
-                        n1 = c;
-                    }
-                }
-            return n2;
-        }
 
 function arrReverseSorted(arr){
-arr_reserve=[];
+let arr_reserve=[];
 
 arr_reserve=arr.sort((a, b) => b - a);
 

@@ -54,6 +54,10 @@
   </table>
   <script>
     /* ваш код */
+	   let tr = document.querySelectorAll("tr");
+    let t = document.querySelectorAll("td");
+    for (let i = 0; i < t.length; i += tr.length + 1)
+      t[i].style.backgroundColor = "#ff0000";
   </script>
 </body>
 </html>

@@ -3,27 +3,33 @@
 <body>
   <script>
     "use strict";
-    function showBook(){
-			alert("Title: " + this.title + "\n");
-			alert("Price: " + this.price + "\n");
-		}
+        let book1={};
+        book1.title = "Милый друг";
+        book1.pubYear = 1980;
+        book1.price = 1500;
+        book1.show = function(){
+            console.log(book1.title +" - "+ book1.price);
+        }
+
+        function showBook(){
+            console.log(this.title +' - '+ this.price);
+        }
+           
+        
+        let book2={
+            title: "Над пропастью во ржи",
+            pubYear: 2000,
+            price: 560,
+            show: showBook
+        };
 
 
-        let book1 = {};
-
-book1.title = "Над пропастью во ржи";
-book1.pubYear = 2000;
-book1.price = 560;
-
-let book2 = {
-    title: "Милый друг",
-    pubYear: 1980,
-    price: 1500,
-};
-
-book1.show();
-console.log("\n");
-book2.show();
+        book1.show();
+        console.log("\n");
+		book2.show();
+    </script>
+</body>
+</html>
 </script>
 </body>
 

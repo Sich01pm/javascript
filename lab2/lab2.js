@@ -54,15 +54,16 @@ function factorial(n){
  * @param {number} x - одно из ставниваемых чисел
  * @returns функцию
  */
-function compare(x){
-  let res=function(y){
-    if (y>x) return true
-      else if (y<x) return false
-	else return null;
-    
-  }
-  return res;
-}
+ function compare(x)
+ {
+     let res= function(y){
+     if(x>y){ return true;}
+     if(x<y){return false;}
+     if(x==y){return null;}
+     
+     }
+     return res;
+ }	
 /**
  * 
  * @param {number} num - число

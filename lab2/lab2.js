@@ -72,7 +72,7 @@ function compare(x){
  */
  function printNumbers(num, cols) {
   let str1 = ""
-  let rows = Math.ceil(num / cols); //кол-во строк округлено в большую сторону
+  let rows = Math.ceil(num / cols);
   for (let row = 0; row < rows; ++row) {
       let str = '';
       for (let col = 0; col < cols; ++col) {

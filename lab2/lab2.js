@@ -1,8 +1,8 @@
 'use strict';
 /**
  * 
- * @param {Number} x-основание степени
- * @param {Number} n-показатель степени
+ * @param {number} x-основание степени
+ * @param {number} n-показатель степени
  * @returns возводит в степень x^n
  */
 function pow(x,n){
@@ -10,7 +10,7 @@ function pow(x,n){
 }
 /**
  * 
- * @param {Number} n - количество чисел
+ * @param {number} n - количество чисел
  * @returns возвращает сумму от 1 до N
  */
 function sumTo(n){
@@ -22,7 +22,7 @@ function sumTo(n){
 }
 /**
  * 
- * @param {Number} n - основание факториала 
+ * @param {number} n - основание факториала 
  * @returns возвращает n-ый факториал
  */
 function factorial(n){
@@ -33,7 +33,7 @@ function factorial(n){
   }
 /**
  * 
- * @param {Number} n - ое число число Фибоначчи
+ * @param {number} n - ое число число Фибоначчи
  * @returns возвращает n-oe число Фибоначчи
  */
  function fib(n) {
@@ -51,19 +51,17 @@ function factorial(n){
 }
 /**
  * 
- * @param {Number} x - одно из ставниваемых чисел
+ * @param {number} x - одно из ставниваемых чисел
  * @returns функцию
  */
 function compare(x){
-  let res=function(){
-    let y=prompt('Введите число y');
+  let res=function(y){
     if (y>x) return true
       else if (y<x) return false
 	else return null;
     
   }
-  return res();
-  
+  return res;
 }
 /**
  * 

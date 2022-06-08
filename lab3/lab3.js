@@ -19,21 +19,6 @@ function checkSpam(str) {
         return true;
     else return false;
 }
-function fibs(N) {
-    let N = +prompt("Введите N:");
-    let a = [];
-    let str = '';
-    if (!Number.isNaN(N))
-        if (N == 0) str = 0;
-        else
-            for (let j = 0; j < N; ++j) {
-                a[j] = fib(j);
-                str += a[j] + ' ';
-            }
-    else str = NaN;
-
-    return str;
-        }
 
 function truncate(str, maxlength) {
     if (str.length > maxlength)
